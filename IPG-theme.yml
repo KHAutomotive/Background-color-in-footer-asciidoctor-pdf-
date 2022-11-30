@@ -1,0 +1,45 @@
+extends: default
+role:
+  blue:
+    font-color: #1167b1
+  red:
+    font-color: #FF0000
+  green:
+    font-color: #00FF00
+  right:
+   align-text: right
+title-page:
+  background-color: #EAEAEA
+  logo:
+    image:
+      image: Visual.png
+toc:
+  title:
+    font-color: #1167b1
+page:
+  margin: [1.5in, 0.5in, 1in, 0.5in]
+header:
+  height: 0.5in
+  columns: <50% =0% <50%
+  font-size: 12
+  image-vertical-align: 0.70in
+  vertical-align: [top, 30]
+  line-height: 1
+  recto: &shared_footer
+    left: 
+     content: image:honda-car.png[]
+    right:
+      content: '{section-or-chapter-title} *| {page-number}*'
+  verso: *shared_footer
+footer:
+  height: 0.75in
+  font-size: 10
+  margin: 0
+  content-margin: [0, inherit]
+  background-color: #DDDDDD
+  recto: &shared_footer
+    left:
+      content: '*K.H. GmbH*'
+    right: 
+      content: '*Date: November, 2022*'
+  verso: *shared_footer
